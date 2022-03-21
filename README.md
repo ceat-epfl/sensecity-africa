@@ -11,13 +11,13 @@ Crowdsensing urban data in Africa - [sensecity-africa.io](https://sensecity-afri
 
 From the root of this repository, follow the steps below:
 
-1. Create a conda environment
+1. Create a conda environment (if you have Snakemake and mamba, you may use `snakemake -c1 create_environment` instead):
 
 ```
-make create_environment
+conda env create -f environment.yml
 ```
 
-2. Activate it
+2. Activate it:
 
 ```
 conda activate sensecity-africa
@@ -26,7 +26,7 @@ conda activate sensecity-africa
 3. Register the IPython kernel for Jupyter
 
 ```
-make register_ipykernel
+snakemake -c1 register_ipykernel
 ```
 
 4. Create a file named `.env` with the following content (to avoid disclosing your login credentials, remember to exclude such a file from version control):
