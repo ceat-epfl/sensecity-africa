@@ -5,7 +5,12 @@ channels:
 dependencies:
   - python-dotenv>=0.5.1
   - python=3.9
+  - pip
+  - pip:
+      - exif
   - ipykernel
   - contextily
   - geopandas
+  - osmnx>=1
+  - pillow
   - snakemake
